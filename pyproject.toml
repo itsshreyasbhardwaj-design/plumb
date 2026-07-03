@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plumb-context"
+version = "0.1.0"
+description = "Keep your AI's context true to the code — a zero-dependency context-integrity linter."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Shreyas Bhardwaj" }]
+keywords = ["claude-code", "ai", "context", "linter", "developer-tools"]
+
+[project.scripts]
+plumb = "plumb.cli:main"
+
+[tool.setuptools]
+packages = ["plumb"]
